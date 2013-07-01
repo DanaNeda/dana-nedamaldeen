@@ -1,0 +1,13 @@
+---
+layout: home
+---
+
+{% for post in site.posts %}
+<div class="dn-portfolio three-cols">
+	<div class="pf-item">
+	    <a href="{{ post.url }}"><img src="../images/{{ post.image-url }}"></a>
+	    <a href="{{ post.url }}">{{ post.title }}</a>
+	    <p>{{ post.client }}</p>
+	</div>
+</div>
+{% endfor %}

@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+@lblue: #4875ba;
+@dblue: #20457b;
+@dgrey: #474747;
+
+body {
+    font-family: 'open sans', sans-serif; 
+    font-weight: 300;
+    font-size: 1.1em;
+    background: #fff;
+    color: @dgrey;
+    line-height: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: @lblue;
+}
+
+h1 {
+    font-size: 4.5em;
+    color: #fff;
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 3.5em;
+    color: #20457b;
+}
+
+.center-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background: @lblue;
+
+    h1 {
+        color: #fff;
+    }
+
+    .dn-intro-typo {
+        position: relative;
+        top: 30%;
+    }
+
+    .dn-intro-scrolldown {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -100px;
+        width: 200px;
+        color: @dblue;
+    }
+}
+
+.dn-portfolio {
+    width: 100%;
+}
+
+.three-cols {
+    text-align: center;
+
+    img {
+        width: 100%;
+    }
+
+    a {
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .pf-item {
+        width: 33%;
+        float: left;
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+footer {
+    background: #333;
+    position: relative;
+    clear: both;
+    height: 100px;
+
+    .social-links {
+        margin: 0 auto;
+        width: 280px;
+        padding-top: 10px;
+    }
+    
+    .icon {
+        border-radius: 60%;
+        background: rgba(255,255,255,0.2);
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin: 10px;
+
+        transition-property: background;
+        transition-duration: 0.5s;
+    }
+
+    .twitter:hover {
+        background: #46a7de;
+    }
+
+    .dribbble:hover {
+        background: #e94c89;
+    }
+
+    .linkedin:hover {
+        background: #1a84bc;
+    }
+
+    .email:hover {
+        background: #bca831;
+    }
+}
+
