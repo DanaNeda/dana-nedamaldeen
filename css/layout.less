@@ -14,7 +14,7 @@ body {
     font-family: 'open sans', sans-serif; 
     font-weight: 300;
     font-size: 1.1em;
-    background: #fff;
+    background: #eaeaea;
     color: @dgrey;
     line-height: 2em;
 }
@@ -24,16 +24,19 @@ a {
     color: @lblue;
 }
 
+p {
+    margin-bottom: 25px;
+}
+
 h1 {
-    font-size: 4.5em;
+    font-size: 2em;
     color: #fff;
-    line-height: 1.8em;
-    font-weight: 300;
+    line-height: 1.3em;
+    font-weight: 600;
 }
 
 h2 {
-    font-size: 3.5em;
-    color: #20457b;
+    font-weight: 600;
 }
 
 .center-wrapper {
@@ -46,7 +49,15 @@ header {
     background: @lblue;
 
     h1 {
-        color: #fff;
+        font-size: 4.5em;
+        line-height: 1.8em;
+        font-weight: 300;
+    }
+
+    h2 {
+        font-size: 3.5em;
+        color: #20457b;
+        font-weight: 300;
     }
 
     .dn-intro-typo {
@@ -134,13 +145,57 @@ footer {
     }
 }
 
-article .post {
-    max-width: 1000px;
+article.post {
 
+    img {
+        width: 100%;
+    }
+    .post-header {
+        padding-top: 60px;
+        background: @lblue;
+        height: 200px;
+        color: #fff;
+    }
+
+    .post-body {
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .post-center {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .two-cols {
+
+    }
+
+    .one {
+        width: 30%;
+        float: right;
+        
+        line-height: 1.7em;
+        padding-top: 10px;
+
+        dt {
+            color: @lblue;
+            font-weight: 600;
+        }
+
+        dd {
+            margin-bottom: 20px;
+            color: @dblue;
+        }
+    }
+
+    .two {
+        width: 60%;
+        float: left;
+        margin-bottom: 50px;
+    }
+    
 
 }
 
-.post-header {
-        background: @lblue;
-        height: 500px;
-    }
+
