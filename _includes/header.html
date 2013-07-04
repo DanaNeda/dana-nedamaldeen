@@ -20,8 +20,12 @@
         <script src="/js/jquery.sticky.js" type="text/javascript"></script>
 
         <script type="text/javascript">
+
             $(document).ready(function() {
-                $('#browser-height').css({'height':(($(window).height()))+'px'});
+
+                //$("#screensaver").css("bottom", "4000px");
+
+                $("#screensaver").addClass("swipe-up");
 
                 var $dnIntroSubtitle = $('#dnIntroSubtitle');  // namespacing: $ fuer jquery objects, dn fuer dana neda
                 var names = ['Interaction Designer', 'Experience Designer', 'Interface Designer', 'Guitar player'];
